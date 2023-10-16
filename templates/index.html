@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Checker</title>
+</head>
+
+<body>
+    <h1>Input Checker</h1>
+    <form method="POST">
+        <label for="input1">Enter Input 1:</label>
+        <input type="text" id="input1" name="input1">
+        <br>
+        <label for="input2">Enter Input 2:</label>
+        <input type="text" id="input2" name="input2">
+        <br>
+        <input type="submit" value="Check Input">
+    </form>
+    {% if result %}
+    <p>{{ result }}</p>
+    {% endif %}
+</body>
+
+</html>
