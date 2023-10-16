@@ -3,11 +3,12 @@
 
 <head>
     <title>Input Checker</title>
+
 </head>
 
 <body>
     <h1>Input Checker</h1>
-    <form method="POST">
+    <form method="POST" action="/process_data">
         <label for="input1">Enter Input 1:</label>
         <input type="text" id="input1" name="input1">
         <br>
@@ -16,9 +17,6 @@
         <br>
         <input type="submit" value="Check Input">
     </form>
-    {% if result %}
-    <p>{{ result }}</p>
-    {% endif %}
 </body>
 
 </html>
