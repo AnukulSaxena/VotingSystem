@@ -102,7 +102,7 @@ def input_vote():
     workbook.save(file_name)
     result = f"Result appended to {file_name}"
     print(result)
-    return render_template("index.html")
+    return render_template("final.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
